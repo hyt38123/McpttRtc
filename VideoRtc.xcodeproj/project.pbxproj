@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D35E014252ECC6E00FFBD8A /* rtcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E004252ECC6D00FFBD8A /* rtcp.c */; };
+		9D35E015252ECC6E00FFBD8A /* dealrtpunpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E005252ECC6D00FFBD8A /* dealrtpunpack.c */; };
+		9D35E016252ECC6E00FFBD8A /* h264_packetizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E007252ECC6D00FFBD8A /* h264_packetizer.c */; };
+		9D35E017252ECC6E00FFBD8A /* jbuf_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E008252ECC6D00FFBD8A /* jbuf_opt.c */; };
+		9D35E018252ECC6E00FFBD8A /* jitter_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E00A252ECC6D00FFBD8A /* jitter_buffer.c */; };
+		9D35E019252ECC6E00FFBD8A /* rtp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E00B252ECC6D00FFBD8A /* rtp.c */; };
+		9D35E01A252ECC6E00FFBD8A /* packets_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E00D252ECC6E00FFBD8A /* packets_list.c */; };
+		9D35E01B252ECC6E00FFBD8A /* callCplus.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E00E252ECC6E00FFBD8A /* callCplus.c */; };
+		9D35E024252ECD8800FFBD8A /* glog.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E01E252ECD8700FFBD8A /* glog.c */; };
+		9D35E025252ECD8800FFBD8A /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E01F252ECD8700FFBD8A /* utils.c */; };
+		9D35E026252ECD8800FFBD8A /* os_core_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D35E022252ECD8800FFBD8A /* os_core_unix.c */; };
+		9D4C7368250DA20F00F172DD /* VideoRtc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D4C7365250DA20F00F172DD /* VideoRtc.h */; };
+		9D4C73D325109A5A00F172DD /* transport_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73C625109A5A00F172DD /* transport_udp.c */; };
+		9D4C73D425109A5A00F172DD /* vid_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73C825109A5A00F172DD /* vid_stream.c */; };
+		9D4C73D525109A5A00F172DD /* rtc_recv.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73CB25109A5A00F172DD /* rtc_recv.c */; };
+		9D4C73D625109A5B00F172DD /* rtc_send.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73CC25109A5A00F172DD /* rtc_send.c */; };
+		9D4C73D725109A5B00F172DD /* vid_port.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73CD25109A5A00F172DD /* vid_port.c */; };
+		9D4C73D825109A5B00F172DD /* vid_codec.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C73CF25109A5A00F172DD /* vid_codec.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D4C7360250DA20F00F172DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9D4C7368250DA20F00F172DD /* VideoRtc.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D35E002252ECC6D00FFBD8A /* jitter_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jitter_buffer.h; path = packed/jitter_buffer.h; sourceTree = "<group>"; };
+		9D35E003252ECC6D00FFBD8A /* rtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtp.h; path = packed/rtp.h; sourceTree = "<group>"; };
+		9D35E004252ECC6D00FFBD8A /* rtcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rtcp.c; path = packed/rtcp.c; sourceTree = "<group>"; };
+		9D35E005252ECC6D00FFBD8A /* dealrtpunpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dealrtpunpack.c; path = packed/dealrtpunpack.c; sourceTree = "<group>"; };
+		9D35E006252ECC6D00FFBD8A /* jbuf_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jbuf_opt.h; path = packed/jbuf_opt.h; sourceTree = "<group>"; };
+		9D35E007252ECC6D00FFBD8A /* h264_packetizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = h264_packetizer.c; path = packed/h264_packetizer.c; sourceTree = "<group>"; };
+		9D35E008252ECC6D00FFBD8A /* jbuf_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jbuf_opt.c; path = packed/jbuf_opt.c; sourceTree = "<group>"; };
+		9D35E009252ECC6D00FFBD8A /* dealttpunpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dealttpunpack.h; path = packed/dealttpunpack.h; sourceTree = "<group>"; };
+		9D35E00A252ECC6D00FFBD8A /* jitter_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jitter_buffer.c; path = packed/jitter_buffer.c; sourceTree = "<group>"; };
+		9D35E00B252ECC6D00FFBD8A /* rtp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rtp.c; path = packed/rtp.c; sourceTree = "<group>"; };
+		9D35E00C252ECC6E00FFBD8A /* spsdecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spsdecoder.h; path = packed/spsdecoder.h; sourceTree = "<group>"; };
+		9D35E00D252ECC6E00FFBD8A /* packets_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packets_list.c; path = packed/packets_list.c; sourceTree = "<group>"; };
+		9D35E00E252ECC6E00FFBD8A /* callCplus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = callCplus.c; path = packed/callCplus.c; sourceTree = "<group>"; };
+		9D35E00F252ECC6E00FFBD8A /* rtcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcp.h; path = packed/rtcp.h; sourceTree = "<group>"; };
+		9D35E010252ECC6E00FFBD8A /* h264_packetizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h264_packetizer.h; path = packed/h264_packetizer.h; sourceTree = "<group>"; };
+		9D35E011252ECC6E00FFBD8A /* packets_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packets_list.h; path = packed/packets_list.h; sourceTree = "<group>"; };
+		9D35E012252ECC6E00FFBD8A /* RtpHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtpHeader.h; path = packed/RtpHeader.h; sourceTree = "<group>"; };
+		9D35E013252ECC6E00FFBD8A /* callCplus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = callCplus.h; path = packed/callCplus.h; sourceTree = "<group>"; };
+		9D35E01D252ECD8700FFBD8A /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os.h; path = VideoRtc/packed/pj/os.h; sourceTree = SOURCE_ROOT; };
+		9D35E01E252ECD8700FFBD8A /* glog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glog.c; path = VideoRtc/packed/pj/glog.c; sourceTree = SOURCE_ROOT; };
+		9D35E01F252ECD8700FFBD8A /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utils.c; path = VideoRtc/packed/pj/utils.c; sourceTree = SOURCE_ROOT; };
+		9D35E020252ECD8700FFBD8A /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = VideoRtc/packed/pj/types.h; sourceTree = SOURCE_ROOT; };
+		9D35E021252ECD8800FFBD8A /* glog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glog.h; path = VideoRtc/packed/pj/glog.h; sourceTree = SOURCE_ROOT; };
+		9D35E022252ECD8800FFBD8A /* os_core_unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = os_core_unix.c; path = VideoRtc/packed/pj/os_core_unix.c; sourceTree = SOURCE_ROOT; };
+		9D35E023252ECD8800FFBD8A /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = VideoRtc/packed/pj/utils.h; sourceTree = SOURCE_ROOT; };
+		9D35E029252ECE6100FFBD8A /* basedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basedef.h; path = include/basedef.h; sourceTree = "<group>"; };
+		9D35E02A252ECE6100FFBD8A /* h264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h264.h; path = include/h264.h; sourceTree = "<group>"; };
+		9D4C7362250DA20F00F172DD /* libVideoRtc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVideoRtc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4C7365250DA20F00F172DD /* VideoRtc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRtc.h; sourceTree = "<group>"; };
+		9D4C7366250DA20F00F172DD /* VideoRtc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRtc.m; sourceTree = "<group>"; };
+		9D4C73C325109A5A00F172DD /* vid_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vid_codec.h; sourceTree = "<group>"; };
+		9D4C73C425109A5A00F172DD /* NALDecoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NALDecoder.c; sourceTree = "<group>"; };
+		9D4C73C525109A5A00F172DD /* NALDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NALDecoder.h; sourceTree = "<group>"; };
+		9D4C73C625109A5A00F172DD /* transport_udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_udp.c; sourceTree = "<group>"; };
+		9D4C73C725109A5A00F172DD /* transport_udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport_udp.h; sourceTree = "<group>"; };
+		9D4C73C825109A5A00F172DD /* vid_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vid_stream.c; sourceTree = "<group>"; };
+		9D4C73C925109A5A00F172DD /* vid_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vid_port.h; sourceTree = "<group>"; };
+		9D4C73CB25109A5A00F172DD /* rtc_recv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtc_recv.c; sourceTree = "<group>"; };
+		9D4C73CC25109A5A00F172DD /* rtc_send.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtc_send.c; sourceTree = "<group>"; };
+		9D4C73CD25109A5A00F172DD /* vid_port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vid_port.c; sourceTree = "<group>"; };
+		9D4C73CE25109A5A00F172DD /* vid_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vid_stream.h; sourceTree = "<group>"; };
+		9D4C73CF25109A5A00F172DD /* vid_codec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vid_codec.c; sourceTree = "<group>"; };
+		9D4C73D125109A5A00F172DD /* typedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedefs.h; sourceTree = "<group>"; };
+		9D5FB96C251C88A80036F0B6 /* video_rtc_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_rtc_api.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4C735F250DA20F00F172DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D35E001252ECC2A00FFBD8A /* packed */ = {
+			isa = PBXGroup;
+			children = (
+				9D35E01C252ECD6200FFBD8A /* pj */,
+				9D35E00E252ECC6E00FFBD8A /* callCplus.c */,
+				9D35E013252ECC6E00FFBD8A /* callCplus.h */,
+				9D35E005252ECC6D00FFBD8A /* dealrtpunpack.c */,
+				9D35E009252ECC6D00FFBD8A /* dealttpunpack.h */,
+				9D35E007252ECC6D00FFBD8A /* h264_packetizer.c */,
+				9D35E010252ECC6E00FFBD8A /* h264_packetizer.h */,
+				9D35E008252ECC6D00FFBD8A /* jbuf_opt.c */,
+				9D35E006252ECC6D00FFBD8A /* jbuf_opt.h */,
+				9D35E00A252ECC6D00FFBD8A /* jitter_buffer.c */,
+				9D35E002252ECC6D00FFBD8A /* jitter_buffer.h */,
+				9D35E00D252ECC6E00FFBD8A /* packets_list.c */,
+				9D35E011252ECC6E00FFBD8A /* packets_list.h */,
+				9D35E004252ECC6D00FFBD8A /* rtcp.c */,
+				9D35E00F252ECC6E00FFBD8A /* rtcp.h */,
+				9D35E00B252ECC6D00FFBD8A /* rtp.c */,
+				9D35E003252ECC6D00FFBD8A /* rtp.h */,
+				9D35E012252ECC6E00FFBD8A /* RtpHeader.h */,
+				9D35E00C252ECC6E00FFBD8A /* spsdecoder.h */,
+			);
+			name = packed;
+			sourceTree = "<group>";
+		};
+		9D35E01C252ECD6200FFBD8A /* pj */ = {
+			isa = PBXGroup;
+			children = (
+				9D35E01E252ECD8700FFBD8A /* glog.c */,
+				9D35E021252ECD8800FFBD8A /* glog.h */,
+				9D35E022252ECD8800FFBD8A /* os_core_unix.c */,
+				9D35E01D252ECD8700FFBD8A /* os.h */,
+				9D35E020252ECD8700FFBD8A /* types.h */,
+				9D35E01F252ECD8700FFBD8A /* utils.c */,
+				9D35E023252ECD8800FFBD8A /* utils.h */,
+			);
+			path = pj;
+			sourceTree = "<group>";
+		};
+		9D35E028252ECE4600FFBD8A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9D35E029252ECE6100FFBD8A /* basedef.h */,
+				9D35E02A252ECE6100FFBD8A /* h264.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		9D4C7359250DA20F00F172DD = {
+			isa = PBXGroup;
+			children = (
+				9D4C7364250DA20F00F172DD /* VideoRtc */,
+				9D4C7363250DA20F00F172DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4C7363250DA20F00F172DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C7362250DA20F00F172DD /* libVideoRtc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D4C7364250DA20F00F172DD /* VideoRtc */ = {
+			isa = PBXGroup;
+			children = (
+				9D35E028252ECE4600FFBD8A /* include */,
+				9D35E001252ECC2A00FFBD8A /* packed */,
+				9D5FB96C251C88A80036F0B6 /* video_rtc_api.h */,
+				9D4C73C425109A5A00F172DD /* NALDecoder.c */,
+				9D4C73C525109A5A00F172DD /* NALDecoder.h */,
+				9D4C73CB25109A5A00F172DD /* rtc_recv.c */,
+				9D4C73CC25109A5A00F172DD /* rtc_send.c */,
+				9D4C73C625109A5A00F172DD /* transport_udp.c */,
+				9D4C73C725109A5A00F172DD /* transport_udp.h */,
+				9D4C73D125109A5A00F172DD /* typedefs.h */,
+				9D4C73CF25109A5A00F172DD /* vid_codec.c */,
+				9D4C73C325109A5A00F172DD /* vid_codec.h */,
+				9D4C73CD25109A5A00F172DD /* vid_port.c */,
+				9D4C73C925109A5A00F172DD /* vid_port.h */,
+				9D4C73C825109A5A00F172DD /* vid_stream.c */,
+				9D4C73CE25109A5A00F172DD /* vid_stream.h */,
+				9D4C7365250DA20F00F172DD /* VideoRtc.h */,
+				9D4C7366250DA20F00F172DD /* VideoRtc.m */,
+			);
+			path = VideoRtc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4C7361250DA20F00F172DD /* VideoRtc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4C736B250DA20F00F172DD /* Build configuration list for PBXNativeTarget "VideoRtc" */;
+			buildPhases = (
+				9D4C735E250DA20F00F172DD /* Sources */,
+				9D4C735F250DA20F00F172DD /* Frameworks */,
+				9D4C7360250DA20F00F172DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoRtc;
+			productName = VideoRtc;
+			productReference = 9D4C7362250DA20F00F172DD /* libVideoRtc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4C735A250DA20F00F172DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = hytera;
+				TargetAttributes = {
+					9D4C7361250DA20F00F172DD = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 9D4C735D250DA20F00F172DD /* Build configuration list for PBXProject "VideoRtc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D4C7359250DA20F00F172DD;
+			productRefGroup = 9D4C7363250DA20F00F172DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4C7361250DA20F00F172DD /* VideoRtc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4C735E250DA20F00F172DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D35E024252ECD8800FFBD8A /* glog.c in Sources */,
+				9D35E014252ECC6E00FFBD8A /* rtcp.c in Sources */,
+				9D35E015252ECC6E00FFBD8A /* dealrtpunpack.c in Sources */,
+				9D4C73D325109A5A00F172DD /* transport_udp.c in Sources */,
+				9D4C73D425109A5A00F172DD /* vid_stream.c in Sources */,
+				9D4C73D825109A5B00F172DD /* vid_codec.c in Sources */,
+				9D35E017252ECC6E00FFBD8A /* jbuf_opt.c in Sources */,
+				9D4C73D525109A5A00F172DD /* rtc_recv.c in Sources */,
+				9D35E01B252ECC6E00FFBD8A /* callCplus.c in Sources */,
+				9D4C73D725109A5B00F172DD /* vid_port.c in Sources */,
+				9D35E01A252ECC6E00FFBD8A /* packets_list.c in Sources */,
+				9D4C73D625109A5B00F172DD /* rtc_send.c in Sources */,
+				9D35E025252ECD8800FFBD8A /* utils.c in Sources */,
+				9D35E026252ECD8800FFBD8A /* os_core_unix.c in Sources */,
+				9D35E016252ECC6E00FFBD8A /* h264_packetizer.c in Sources */,
+				9D35E018252ECC6E00FFBD8A /* jitter_buffer.c in Sources */,
+				9D35E019252ECC6E00FFBD8A /* rtp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D4C7369250DA20F00F172DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					VideoRtc/include,
+					VideoRtc/packed,
+					VideoRtc/packed/pj,
+					VideoRtc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D4C736A250DA20F00F172DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					VideoRtc/include,
+					VideoRtc/packed,
+					VideoRtc/packed/pj,
+					VideoRtc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D4C736C250DA20F00F172DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9N7K3MXQT;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D4C736D250DA20F00F172DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9N7K3MXQT;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4C735D250DA20F00F172DD /* Build configuration list for PBXProject "VideoRtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4C7369250DA20F00F172DD /* Debug */,
+				9D4C736A250DA20F00F172DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4C736B250DA20F00F172DD /* Build configuration list for PBXNativeTarget "VideoRtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4C736C250DA20F00F172DD /* Debug */,
+				9D4C736D250DA20F00F172DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D4C735A250DA20F00F172DD /* Project object */;
+}

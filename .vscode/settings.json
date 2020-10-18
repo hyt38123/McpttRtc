@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "TRANSPORT_UDP.C": "cpp",
+        "UNITTEST.C": "cpp",
+        "RTP.C": "cpp",
+        "UTILS.C": "cpp",
+        "VID_STREAM.C": "cpp",
+        "VID_CODEC.C": "cpp",
+        "H264_PACKETIZER.C": "cpp",
+        "NALDECODER.C": "cpp",
+        "PACKETS_LIST.C": "cpp",
+        "JBUF_OPT.C": "cpp",
+        "CALLCPLUS.C": "cpp",
+        "LOG.C": "cpp",
+        "OS_CORE_UNIX.C": "cpp",
+        "RTC_SEND.C": "cpp",
+        "VID_POR.C": "cpp",
+        "VID_PORT.C": "cpp",
+        "mediacodec.h": "c",
+        "MEDIACODEC_DECODER.C": "cpp",
+        "DEALRTPUNPACK.C": "cpp",
+        "JITTER_BUFFER.C": "cpp"
+    }
+}
