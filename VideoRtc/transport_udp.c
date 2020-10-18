@@ -90,7 +90,7 @@ static void worker_rtp_sendto(void *arg)
 	log_debug("socket recv buffer size:%d", optVal);
 
 
-	log_error("begin to start worker_rtp_sendto thread rtp_sock:%ld", udp->rtp_sock);
+	log_error("begin to start worker_rtp_sendto thread rtp_sock:%d", udp->rtp_sock);
 	while(udp->rtp_sock != PJ_INVALID_SOCKET && !udp->vid_rtp_sendto_thread.thread_quit)
 	{
 		rtp_node = udp->rtp_thread_list_header.list_current_send;
@@ -455,7 +455,7 @@ pj_status_t transport_udp_create( struct transport_udp** tpout, const char *loca
 
 	*tpout = tp;
 
-	log_error("transport_udp_create done rtp_sock:%ld.\n", tp->rtp_sock);
+	log_error("transport_udp_create done rtp_sock:%d.\n", tp->rtp_sock);
 
     return status;
 }
